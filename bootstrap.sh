@@ -9,7 +9,6 @@ rm -rf $HOME/.config/zsh
 rm -rf $HOME/.config/nvim
 rm -rf $HOME/.config/doom
 rm -rf $HOME/.config/gnome
-rm -rf $HOME/.config/gnome
 rm -rf $HOME/.config/systemd
 rm -rf $HOME/.config/distrobox
 
@@ -17,7 +16,6 @@ rm -rf $HOME/.config/distrobox
 stow --target=$HOME zsh
 stow --target=$HOME nvim
 stow --target=$HOME doom
-stow --target=$HOME gnome
 stow --target=$HOME gnome
 stow --target=$HOME systemd
 stow --target=$HOME distrobox
