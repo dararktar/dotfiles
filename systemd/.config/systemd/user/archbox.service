@@ -1,0 +1,12 @@
+[Unit]
+Description=Start archbox distrobox on boot
+After=default.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/podman start archbox
+ExecStop=/usr/bin/podman stop archbox
+
+[Install]
+WantedBy=default.target

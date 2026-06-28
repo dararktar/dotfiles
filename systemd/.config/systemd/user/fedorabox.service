@@ -1,0 +1,12 @@
+[Unit]
+Description=Start fedorabox distrobox on boot
+After=default.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/podman start fedorabox
+ExecStop=/usr/bin/podman stop fedorabox
+
+[Install]
+WantedBy=default.target
