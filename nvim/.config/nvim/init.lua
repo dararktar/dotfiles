@@ -1,1 +1,4 @@
-vim.notify("Config loaded!!!", vim.log.levels.INFO)
+-- require("config.options")
+-- require("config.keymaps")
+require("config.plugins")
+
