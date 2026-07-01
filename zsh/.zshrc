@@ -8,9 +8,8 @@ done
 
 [[ -f ~/.config/zsh/aliases ]] && source ~/.config/zsh/aliases
 
-autoload -Uz compinit && compinit
-
 export ZSH="$HOME/.local/share/oh-my-zsh"
+export ZSH_COMPDUMP="$HOME/.cache/zsh/zcompdump-$SHORT_HOST-$ZSH_VERSION"
 
 ZSH_THEME="robbyrussell"
 
